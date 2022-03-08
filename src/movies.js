@@ -2107,7 +2107,9 @@ function orderAlphabetically(paraMovies) {
 
 // BONUS - Iteration 7: Time Format - Turn duration of the movies from hours to minutes
 function turnHoursToMinutes(paraMovies) {
-  varMovies = [...paraMovies];
+  
+  let varMovies0 = JSON.stringify(paraMovies);
+  let varMovies = JSON.parse(varMovies0);
 
   let vartotalMinutes, 
   varmovieMinutes, 
@@ -2144,6 +2146,7 @@ function turnHoursToMinutes(paraMovies) {
       }
   }
       else {
+        varMovie.duration = 0;
         return false;
       }
           
@@ -2151,7 +2154,9 @@ function turnHoursToMinutes(paraMovies) {
     return varmoviesDuration;
 }
 // BONUS - Iteration 8: Best yearly score average - Best yearly score average
-function bestYearAvg() {}
+function bestYearAvg(paraMovies) {
+  
+}
 
 
 
